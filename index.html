@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Books App</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="top">
+        <header><h1>Books App</h1></header>
+
+        <div class="addNewBook">
+            <button id="showDialog">Add new Book</button>
+        </div>
+    </div> 
+    <div class="book-container">
+        <div id="book-list"></div>
+        <dialog id="favDialog">
+            <form id="add-book-form">
+                <p>        
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required><br><br>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required><br><br>
+                    <label for="pages">Pages:</label>
+                    <input type="number" id="pages" name="pages" ><br><br>
+                    <label for="info">Info:</label>
+                    <textarea id="info" name="info"></textarea><br><br>          
+                    <label for="read">Read:</label>
+                    <input type="checkbox" id="read" name="read"><br><br>
+                </p>
+                <div>
+                    <button id="confirmBtn">Add Book</button>
+                    <button id="clear">Clear</button>
+                    <button id="cancelBtn">Cancel</button>
+                </div>
+            </form>
+        </dialog> 
+    </div>      
+</body>
+</html>

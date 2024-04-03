@@ -1,0 +1,100 @@
+html{
+    min-height: 100svh;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(1, 24, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(97, 97, 255, 0.212);
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    background-image: linear-gradient(
+        45deg,
+        magenta,
+        rebeccapurple,
+        dodgerblue,
+        green
+      );
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.097);
+}
+#book-list{
+    display: block; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    grid-gap: 15px;
+    margin: 1rem;
+        
+}
+
+.book-info{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: .8rem;
+    margin: .5rem;
+    border-radius: 8px;
+    background-color: rgba(137, 43, 226, 0.203);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.088);
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.deleteButton{
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgba(212, 41, 41, 0.917);
+}
+
+.readButton{
+    height: 20px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgba(142, 59, 219, 0.856);
+}
+
+#favDialog{
+
+    background-color: rgb(228, 228, 241);
+    border-radius: 5px;
+}
+
+::backdrop {
+    background-image: linear-gradient(
+      45deg,
+      magenta,
+      rebeccapurple,
+      dodgerblue,
+      green
+    );
+    opacity: 0.75;
+  }
+
+  #showDialog{
+    background-color: rgb(79, 193, 23);
+    border-radius: 5px;
+    height: 3rem;
+    width: 11rem;
+    font-size: large;
+    font-weight: 600;
+  }
+
+  @media only screen and (max-width: 600px){
+    #book-list{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
